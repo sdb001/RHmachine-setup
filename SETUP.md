@@ -27,8 +27,8 @@ Address the current user neutrally. Do not infer a person's name from the develo
 
 - Apple Silicon macOS: standalone preview under testing; not available for public installation yet.
 - Python 3: currently needed for local state locking and Hermes reply reading.
-- Hermes: existing bridge requires end-to-end onboarding validation.
-- Other AI clients: MCP tool discovery tested in the preview; client-specific installation and report delivery are not yet certified.
+- Hermes: isolated profile connector tested for configuration preservation; authenticated provider/report acceptance testing remains.
+- Other AI clients: MCP configuration export and tool discovery tested. The dashboard i key uses Hermes; other clients can research and save reviews through MCP. Client-specific acceptance testing remains.
 - Windows, Linux and Intel macOS: no installer announced.
 
 ## Release status

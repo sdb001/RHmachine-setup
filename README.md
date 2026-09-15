@@ -13,3 +13,5 @@ Give your assistant this link:
 **Release status: preparation.** A standalone Apple Silicon macOS preview is being tested. No public installer is available yet. Your AI should explain this status rather than clone a source repository or invent a download.
 
 This repository contains public setup instructions. Application source and private development data are not distributed here.
+
+Preview checks passed: latest research/dashboard integration, neutral AI identity, isolated local setup, Hermes configuration preservation, MCP discovery, installer integrity and protection against replacing an existing command. Signing/notarization and real-provider acceptance testing are still pending.
