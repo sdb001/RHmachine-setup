@@ -1,6 +1,6 @@
 # 🛸 RHmachine keyboard guide
 
-For the downloadable **2.1.0-beta.1** terminal app. Press **?** inside the app for help. Uppercase shortcuts mean **Shift + that letter**. Shortcuts depend on the active tab and focused panel; while typing, letters enter text.
+For the downloadable **2.1.0-beta.2** terminal app. Press **?** inside the app for help. Uppercase shortcuts mean **Shift + that letter**. Shortcuts depend on the active tab and focused panel; while typing, letters enter text.
 
 ## Open a tab
 
@@ -106,4 +106,11 @@ Press **0**, select a setting with **↑/↓**, then **Enter**. For AI mode and 
 
 For API credentials, use the local setup wizard described in [SETUP.md](SETUP.md). Never paste API secrets or private keys into dashboard chat or a public issue.
 
-[Setup instructions](SETUP.md) · [Download the beta](https://github.com/sdb001/RHmachine-beta/releases/tag/v2.1.0-beta.1)
+[Setup instructions](SETUP.md) · [Download the beta](https://github.com/sdb001/RHmachine-beta/releases/tag/v2.1.0-beta.2)
+
+## Beta.2 Long and Split indicators
+
+- **VOL SIG:** five-minute volume versus the preceding 55-minute average. A cyan **↑** marks a qualifying spike. **—** means no usable baseline; **STALE** means outdated quote evidence.
+- **Pink outline:** marks the focused Split row as you scroll. Tab moves it between panes; the inactive side retains a muted selection arrow. Data colours remain visible.
+- **SUSTAINED FIRST:** Long ranks fresh markets with at least $50K liquidity and either $10K volume in the preceding 55 minutes or $100K outside the latest hour ahead of isolated bursts. It is an activity ranking, not a safety verdict.
+- **Older labels:** see **7 Feeds** for historical Long lookup progress. HyperSync credentials are optional and supplied locally by each user.

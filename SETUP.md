@@ -25,7 +25,7 @@ Address the current user neutrally. Do not infer a person's name from the develo
 
 ## Current compatibility
 
-- Apple Silicon macOS: unsigned beta 2.1.0-beta.1; public download, not a stable release.
+- Apple Silicon macOS: unsigned beta 2.1.0-beta.2; public download, not a stable release.
 - Python 3: currently needed for local state locking and Hermes reply reading.
 - Hermes: isolated profile connector tested for configuration preservation; authenticated provider/report acceptance testing remains.
 - Other AI clients: MCP configuration export and tool discovery tested. The dashboard i key uses Hermes; other clients can research and save reviews through MCP. Client-specific acceptance testing remains.
@@ -33,17 +33,17 @@ Address the current user neutrally. Do not infer a person's name from the develo
 
 ## Download and install
 
-[Release page](https://github.com/sdb001/RHmachine-beta/releases/tag/v2.1.0-beta.1) — download these assets, not GitHub's generated “Source code” archives:
+[Release page](https://github.com/sdb001/RHmachine-beta/releases/tag/v2.1.0-beta.2) — download these assets, not GitHub's generated “Source code” archives:
 
-- [RHmachine-2.1.0-beta.1-macos-arm64.tar.gz](https://github.com/sdb001/RHmachine-beta/releases/download/v2.1.0-beta.1/RHmachine-2.1.0-beta.1-macos-arm64.tar.gz)
-- [SHA256SUMS](https://github.com/sdb001/RHmachine-beta/releases/download/v2.1.0-beta.1/SHA256SUMS)
-- [README.md](https://github.com/sdb001/RHmachine-beta/releases/download/v2.1.0-beta.1/README.md)
+- [RHmachine-2.1.0-beta.2-macos-arm64.tar.gz](https://github.com/sdb001/RHmachine-beta/releases/download/v2.1.0-beta.2/RHmachine-2.1.0-beta.2-macos-arm64.tar.gz)
+- [SHA256SUMS](https://github.com/sdb001/RHmachine-beta/releases/download/v2.1.0-beta.2/SHA256SUMS)
+- [README.md](https://github.com/sdb001/RHmachine-beta/releases/download/v2.1.0-beta.2/README.md)
 
 No repository access invitation or source checkout is needed. Put the archive and SHA256SUMS in the same directory, then:
 
 ```sh
 shasum -a 256 -c SHA256SUMS
-tar -xzf RHmachine-2.1.0-beta.1-macos-arm64.tar.gz
+tar -xzf RHmachine-2.1.0-beta.2-macos-arm64.tar.gz
 cd RHmachine
 sh install.sh
 ~/.local/bin/rhmachine setup
@@ -60,3 +60,13 @@ After launch, use the [keyboard guide](KEYBOARD.md) for navigation, coin actions
 Public Robinhood RPC, DexScreener and GeckoTerminal endpoints are built in; no shared private keys are distributed. Provider limits and coverage still apply. The setup wizard offers optional private HTTPS RPC, Nansen, HyperSync, X and Bubblemaps credentials. Tell the user to enter these locally in the hidden-input prompt, never in AI chat. Blank preserves an existing value.
 
 Nansen snapshots are disabled in fresh configuration until a key is added. Adding one enables scheduled snapshots within the configured daily cap (50 credits by default). Research services can consume the customer's provider credits when used. Setup makes no validation requests; SAVED is not VALIDATED. Start with public feeds if credentials are unavailable.
+
+## Updating from beta.1
+
+Quit RHmachine and back up ~/.rhmachine. Verify and extract the beta.2 archive, then run `sh install.sh --upgrade` from the extracted RHmachine folder. This only accepts the original beta.1 launcher symlink; unrelated installations are refused. It retains beta.1 files and preserves local settings/history. Start `~/.local/bin/rhmachine terminal`; setup need not be repeated.
+
+An AI client configured with a version-specific binary path must be reconnected and restarted. Follow CONNECT.md: existing Hermes users can run `~/.local/bin/rhmachine connect hermes PROFILE_NAME` with their existing dedicated profile name; other MCP clients can obtain configuration using `~/.local/bin/rhmachine connect mcp`. Preserve the user's model and credentials.
+
+## Beta.2 changes
+
+Long discovery now checks missing contracts for live markets and keeps busier ecosystem coins refreshed through quiet five-minute windows. Long and its Split pane use SUSTAINED FIRST ranking. Split adds VOL SIG and a pink outline for the focused selection. With the user's HyperSync token, older Long labels are searched in resumable batches and verified against RPC; hidden coins remain hidden. Unknown labels are not guessed. These features do not make AI or Nansen requests.
