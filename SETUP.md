@@ -1,6 +1,6 @@
 # Set up RHmachine with your AI
 
-RELEASE PREPARATION — no public installer is published from this page yet.
+UNSIGNED PRIVATE BETA — installers are shared privately; this page has no public download.
 Do not substitute a source checkout or an unofficial download.
 
 Give your AI assistant the published URL of this page and say:
@@ -25,7 +25,7 @@ Address the current user neutrally. Do not infer a person's name from the develo
 
 ## Current compatibility
 
-- Apple Silicon macOS: standalone preview under testing; not available for public installation yet.
+- Apple Silicon macOS: unsigned private beta 2.1.0-beta.1; shared privately, not a public stable release.
 - Python 3: currently needed for local state locking and Hermes reply reading.
 - Hermes: isolated profile connector tested for configuration preservation; authenticated provider/report acceptance testing remains.
 - Other AI clients: MCP configuration export and tool discovery tested. The dashboard i key uses Hermes; other clients can research and save reviews through MCP. Client-specific acceptance testing remains.
@@ -33,4 +33,10 @@ Address the current user neutrally. Do not infer a person's name from the develo
 
 ## Release status
 
-Wait for an official versioned installer, integrity metadata and platform verification instructions here. Do not disable OS protections, clone private source, use a third-party mirror or start paid analysis to work around an unavailable release.
+For an invited beta tester, use the privately supplied versioned archive, SHA256SUMS and included README. Confirm that the user understands it is unsigned and may be blocked by macOS. Do not bypass OS security protections. For everyone else, wait for a public download here. Do not disable OS protections, clone private source, use a third-party mirror or start paid analysis to work around an unavailable release.
+
+## API onboarding
+
+Public Robinhood RPC, DexScreener and GeckoTerminal endpoints are built in; no shared private keys are distributed. Provider limits and coverage still apply. The setup wizard offers optional private HTTPS RPC, Nansen, HyperSync, X and Bubblemaps credentials. Tell the user to enter these locally in the hidden-input prompt, never in AI chat. Blank preserves an existing value.
+
+Nansen snapshots are disabled in fresh configuration until a key is added. Adding one enables scheduled snapshots within the configured daily cap (50 credits by default). Research services can consume the customer's provider credits when used. Setup makes no validation requests; SAVED is not VALIDATED. Start with public feeds if credentials are unavailable.

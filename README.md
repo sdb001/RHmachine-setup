@@ -10,8 +10,8 @@ Give your assistant this link:
 
 > Help me install RHmachine and connect it to my AI using these official instructions. Keep automatic analysis off and let me enter credentials locally.
 
-**Release status: preparation.** A standalone Apple Silicon macOS preview is being tested. No public installer is available yet. Your AI should explain this status rather than clone a source repository or invent a download.
+**Release status: unsigned private beta.** An Apple Silicon macOS beta is packaged for private testing. No public download is available. Your AI should explain this status rather than clone a source repository or invent a download.
 
 This repository contains public setup instructions. Application source and private development data are not distributed here.
 
-Preview checks passed: latest research/dashboard integration, neutral AI identity, isolated local setup, Hermes configuration preservation, MCP discovery, installer integrity and protection against replacing an existing command. Signing/notarization and real-provider acceptance testing are still pending.
+Preview checks passed: latest research/dashboard integration, neutral AI identity, isolated local setup, Hermes configuration preservation, MCP discovery, installer integrity and protection against replacing an existing command. Apple signing/notarization is not included in this private beta. Real-provider acceptance testing is still pending.
