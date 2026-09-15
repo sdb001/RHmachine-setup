@@ -55,6 +55,8 @@ Follow CONNECT.md in the extracted archive to connect Hermes or another MCP clie
 
 ## API onboarding
 
+After launch, use the [keyboard guide](KEYBOARD.md) for navigation, coin actions, Split Radar, Hermes chat and saved charts. Press `?` for in-app help.
+
 Public Robinhood RPC, DexScreener and GeckoTerminal endpoints are built in; no shared private keys are distributed. Provider limits and coverage still apply. The setup wizard offers optional private HTTPS RPC, Nansen, HyperSync, X and Bubblemaps credentials. Tell the user to enter these locally in the hidden-input prompt, never in AI chat. Blank preserves an existing value.
 
 Nansen snapshots are disabled in fresh configuration until a key is added. Adding one enables scheduled snapshots within the configured daily cap (50 credits by default). Research services can consume the customer's provider credits when used. Setup makes no validation requests; SAVED is not VALIDATED. Start with public feeds if credentials are unavailable.

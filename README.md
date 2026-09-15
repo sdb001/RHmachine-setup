@@ -2,6 +2,8 @@
 
 On-chain market radar · discover · track · analyse
 
+[Keyboard controls and shortcuts](KEYBOARD.md) — tabs, Split Radar, scrolling, `d` DexScreener, `i` analysis, `o` saved charts, chat and Settings.
+
 ## Set up with your AI
 
 Give your assistant this link:
