@@ -1,3 +1,15 @@
+# RHmachine downloads withdrawn
+
+The closed-source RHmachine beta downloads were withdrawn on September 19, 2026. No installer is currently available from this project’s GitHub releases.
+
+The previously published beta.1 and beta.2 releases have been unpublished. Existing downloaded copies are not remotely disabled.
+
+---
+
+## Historical setup instructions
+
+The instructions below describe the withdrawn beta and are retained for reference only. Download links no longer provide a public release. Do not use these instructions to start a new installation.
+
 # Set up RHmachine with your AI
 
 UNSIGNED BETA — publicly downloadable for Apple Silicon macOS. Application source remains private.
@@ -70,3 +82,4 @@ An AI client configured with a version-specific binary path must be reconnected 
 ## Beta.2 changes
 
 Long discovery now checks missing contracts for live markets and keeps busier ecosystem coins refreshed through quiet five-minute windows. Long and its Split pane use SUSTAINED FIRST ranking. Split adds VOL SIG and a pink outline for the focused selection. With the user's HyperSync token, older Long labels are searched in resumable batches and verified against RPC; hidden coins remain hidden. Unknown labels are not guessed. These features do not make AI or Nansen requests.
+
